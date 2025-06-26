@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cibersegurança</title>
+    <link href="css/main.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="imagem_icon" href="img/logo-pb-vertical.png">
+</head>
+
+<body>
+    <header>
+        <nav class="left">
+            <a href="index.html">
+                <img id="home" src="img/home-darkTheme.png" alt="Home" title="Home"/>
+            </a>
+            <a href="contato.html">
+                <img id="contato" src="img/form-darkTheme.png" alt="Contato" title="Contato"/>
+            </a>
+            <a href="sobre.html">
+                <img id="sobre" src="img/info-darkTheme.png" alt="Sobre" title="Sobre"/>
+            </a>
+        </nav>
+        <h2>Cibersegurança: O que é? Como me proteger?</h2>
+        <nav class="right">
+            <img id="dark" onclick="addLightTheme()" src="img/change-lightTheme.png" alt="Dark Mode Icon">
+            <img id="light" onclick="removeLightTheme()" src="img/moon-lightTheme.png" alt="Light Mode Icon" style="display: none;">
+            <img id="accessability" onclick="mudarFonte()" src="img/accessibility-darkTheme.png" alt="Acessibilidade" title="Acessibilidade"/>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section class="topico">
+            <article class="texto">
+                <h2 id="titulo">O que é Segurança Digital?</h2>
+                <p>Muitas vezes nos deparamos com mensagens, e-mails ou links suspeitos na internet. Por isso, a atenção deve ser redobrada e, por esse motivo, existe a Cibersegurança. Por uma ampla gama de funções e atitudes, podemos melhorar a segurança dos nossos aparelhos e garantir não venhamos a sofrer nenhuma situação inconveniente e, muitas vezes, custosa.</p>
+                <img src="img/protecao-de-dados.png" alt="Proteja-se!">
+                <h3 id="titulo">Você sabe se proteger?</h3>
+                <p>O descuido pode ser muitas vezes uma dor de cabeça para quem não se previne. Por isso ai vai algumas dicas que podem te ajudar: </p>
+                <p>⚠️Usar senhas curtas e simples, como "123456" ou "senha123", é como trancar a porta com um cadeado de brinquedo. Senhas fracas podem ser quebradas por programas em segundos! Sempre que possível utilize senhas que combinem letras (em maiúsculo e minúsculo), caracteres especiais, números e símbolos.</p>
+                <p>❓ <b>Sabe como evitar aqueles sites suspeitos?</b> Procure sempre utilizar sites que possuem o HTTPS, aqueles que começam com "https.//" e possuem um cadeado de segurança do lado. Os mesmos criptografam seus dados durante o envio, evitando que eles caiam na mãos de pessoal mal-intencionadas.</p>
+                <p>📩<b>Recebeu uma mensagem falsa? Como identificar?</b> As vezes é bem simples. Evite responder, ou clicar em links, enviados por SMS, WhatsApp e/ou E-mail por desconhecidos. Muitas vezes isso é relacionado ao "phishing", uma tática para te "fisgar" fazendo com que você envie seus dados pessoais e financeiros por meio de mensagens como "Parabéns, você ganhou [...]". Sempre verifique toda e qualquer mensagem e/ou link com muita atenção - em alguns casos, hackers também utilizam contas de amigos/familiares que foram hackeadas para te fisgar.</p>
+                <h3 id="titulo">Conhece a Autenticação de Múltiplos Fatores?</h3>
+                <img src="img/mfa.png" alt="MFA">
+                <p>As vezes nem todo esse cuidado é o bastante. Por isso, para proteger suas contas, muitos sites e aplicativos oferecem a autenticação em múltiplos fatores - referenciado como MFA -, que possibilita uma camada extra de proteção. Pode ter certeza, muitas vezes ela é essencial.</p>
+                <p>❓ <b>Mas enfim, o que é e como funciona a autenticação de múltiplos fatores?</b> É bem fácil e simples. Com o MFA ativado na sua conta, é necessário um passo a mais do que a sua senha para obter acesso a conta pretendida. Quem desejar "logar" na sua conta, precisará também de um código que será enviado por SMS, e-mail ou um aplicativo autenticador. Assim, caso haja alguém mal-intencionado tentando logar na sua conta, não poderá acessar a mesma tão facilmente - uma vez que sem o código, o acesso é muito dificultado.</p>
+                <p>🚨Procure utilizar a autenticação em múltiplos fatores - também referenciada como "em duas etapas" - nas contas mais importantes suas (e-mail, redes sociais, bancos, aplicativos). Isso terá uma capacidade de reduzir significativamente de alguém roubar contas e seus dados - além de evitar uma bela dor de cabeça.</p>
+                <h3 id="titulo">Fique atento! Todo cuidado é pouco!</h3>
+                <img src="img/mfa2.png" alt="Cuidado">
+                <p><b>Há muitos outros cuidados que você deve ter e camadas de proteção que você pode colocar.</b> Por exemplo, se você ativou a verificação em duas etapas, não compartilha suas senhas e atualiza seu celular/computador regularmente - você já está na frente de muitos, e mais protegido do que eles.</p>
+                <p><b>Ainda assim, muitos outros cuidados são necessários. Quer mais exemplos?</b> Não use qualquer Wi-Fi público - muitos deles podem ter malwares, vírus, etc... Evite compartilhar o mesmo computador com sua família quando estiver acessando contas importantes. Essa situação já gerou muitos problemas até para famosos, como o Peter do canal <i>Ei Nerd!</i> que foi hackeado, mesmo não sendo ele que tivesse clicado em um link suspeito. O malware, proveniente de um "Cyberpunk 2077 grátis", acabou fazendo com que a conta do Peter no YouTube fosse hackeada por estar "logada" no computador que o baixou.</p>
+                <p>❓ <b>Continua com algumas dúvidas?</b> O site do gov.br oferece muitas respostas para dúvidas sobre golpes digitais e medidas de proteção, como o MFA. Se possível procure o mesmo para receber mais informações. Não deixe de se atualizar e garanta sua proteção.</p>
+                <p>📝 <b>Quer entrar em contato?</b> No seu canto superior esquerdo você poderá ver o símbolo de um formulário, clique nele para entrar em contato conosco. Preencha o formulário e responderei assim que possível.</p>
+                <p>❗ <b>Quer saber mais sobre mim?</b> Também no seu canto superior esquerdo haverá um símbolo de informação, clique nele para saber mais sobre mim e sobre este projeto.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>🔰 Rafael Willian Batista Negri (210892) 🔰</p>
+        <p>🔰 UPF - Ciência da Computação - Web Lab (2025) 🔰</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

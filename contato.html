@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cibersegurança</title>
+    <link href="css/main.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="imagem_icon" href="img/logo-pb-vertical.png">
+</head>
+
+<body>
+    <header>
+        <nav class="left">
+            <a href="index.html">
+                <img id="home" src="img/home-darkTheme.png" alt="Home" title="Home"/>
+            </a>
+            <a href="">
+                <img id="contato" src="img/form-darkTheme.png" alt="Contato" title="Contato"/>
+            </a>
+            <a href="sobre.html">
+                <img id="sobre" src="img/info-darkTheme.png" alt="Sobre" title="Sobre"/>
+            </a>
+        </nav>
+        <h2>Formulário de Contato!</h2>
+        <nav class="right">
+            <img id="dark" onclick="addLightTheme()" src="img/change-lightTheme.png" alt="Dark Mode Icon">
+            <img id="light" onclick="removeLightTheme()" src="img/moon-lightTheme.png" alt="Light Mode Icon" style="display: none;">
+            <img id="accessability" onclick="mudarFonte()" src="img/accessibility-darkTheme.png" alt="Acessibilidade" title="Acessibilidade"/>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section class="contato">
+            <article class="texto-contato">
+                <h3 id="titulo">❗ Envie-nos sua mensagem</h3>
+                <h4 id="titulo">Preencha corretamente!</h4>
+                <img src="img/formulario.png" alt="Formulario!">
+                <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required name="nome" size="50" placeholder="Digite seu nome" /><br><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required name="email" size="50" placeholder="Digite seu e-mail"><br><br><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="1" cols="50" placeholder="Envie sua mensagem..."></textarea><br><br><br>
+
+                <button type="submit" id="botao_contato" onclick="alerta()">Enviar</button>
+                <input type="reset" id="botao_contato" value="Limpar">
+                </form>
+                <p>Deseja enviar um e-mail diretamente ao criador dessa página? Envie para <b>210892@upf.br</b></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>🔰 Rafael Willian Batista Negri (210892) 🔰</p>
+        <p>🔰 UPF - Ciência da Computação - Web Lab (2025) 🔰</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
